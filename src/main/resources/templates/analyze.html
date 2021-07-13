@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analyzer</title>
+</head>
+<body>
+<div align="center">
+    <textarea rows="10" cols="100" th:text="${inputText}"></textarea>
+</div>
+<p></p>
+<div align="center">
+    <textarea rows="20" cols="20" th:text="${#strings.listJoin(showList, '&#10;')}">
+    </textarea>
+</div>
+</body>
+</html>
